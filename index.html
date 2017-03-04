@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta charset="utf-8">
+    <title>the trump effect</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <script>
+        function clickEvent() {
+            year = parseInt(document.getElementById("inputYear").value);
+            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formula(year, avg, yi);
+            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffect(year, avg, yi);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <a class="navbar-brand" href="#">
+                <img src="trump.png" alt="" width="105" height="120">
+
+            </a>
+            <span class="title">
+
+                the trump effect.
+
+               </span>
+
+        </div>
+
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 wall">
+                <br />
+                <br />
+                <p>America is known for it’s diversity and with the election of the very controversial Trump, we may lose out on this. People know that immigrants are being targeted and a lot of them are being deported. But no one knows the exact number.
+                    Our app calculates an estimate of the NYC population based on the year given by the user. We also give an estimate of the population if Trump’s plan is successful. We used JavaScript to complete our app.</p>
+                <br />
+                <br />
+            </div>
+            <div class="col-lg-6 fat">
+                <h1>Enter Year</h1>
+                <input id="inputYear" value="2010">
+                <button onClick="clickEvent()">click here</button>
+                <br />
+                <h1>Estimated Result </h1>
+                <div class="main">
+                    <b>
+                    <h3 id="result"></h3>
+                    <h3 id="tEffect"></h3>
+                  </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /.container -->
+    <script src="pop.js" charset="utf-8"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
