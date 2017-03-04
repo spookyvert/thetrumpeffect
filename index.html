@@ -20,10 +20,34 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
     <script>
-        function clickEvent() {
+        function clickEventny() {
             year = parseInt(document.getElementById("inputYear").value);
-            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formula(year, avg, yi);
-            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffect(year, avg, yi);
+            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formulany(year, avgny, yiny);
+            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffectny(year, avgny, yiny);
+
+        }
+
+        function clickEventmi() {
+            year = parseInt(document.getElementById("inputYear").value);
+            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formulami(year, avgmi, yimi);
+            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffectmi(year, avgmi, yimi);
+            console.log(formulami(), trumpEffectmi(), findSlopemi(), findYmiami());
+
+        }
+
+        function clickEventsj() {
+            year = parseInt(document.getElementById("inputYear").value);
+            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formulasj(year, avgsj, yisj);
+            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffectsj(year, avgsj, yisj);
+            console.log(formulasj(), trumpEffectsj(), findSlopesj(), findYmiasj());
+
+        }
+
+        function clickEventla() {
+            year = parseInt(document.getElementById("inputYear").value);
+            document.getElementById("result").innerHTML = "The Estimated population without Trump is " + formulala(year, avgla, yila);
+            document.getElementById("tEffect").innerHTML = "The Population with Trump is " + trumpEffectla(year, avgla, yila);
+            console.log(formulala(), trumpEffectla(), findSlopela(), findYmiala());
 
         }
     </script>
@@ -66,7 +90,13 @@
             <div class="col-lg-6 fat">
                 <h1>Enter Year</h1>
                 <input id="inputYear" value="2010">
-                <button onClick="clickEvent()">click here</button>
+
+                <br />
+                <br />
+                <button onClick="clickEventny()">New York</button>
+                <button onClick="clickEventmi()">Miami</button>
+                <button onClick="clickEventsj()">San Jose</button>
+                <button onClick="clickEventla()">Los Angeles</button>
                 <br />
                 <h1>Estimated Result </h1>
                 <div class="main">
