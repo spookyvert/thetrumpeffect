@@ -9,6 +9,12 @@ body {
     /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
 }
 
+.shadow {
+  -webkit-box-shadow: 0 8px 6px -6px black;
+   -moz-box-shadow: 0 8px 6px -6px black;
+        box-shadow: 0 8px 6px -6px black;
+}
+
 .button {
     background-color: #000;
     border: none;
@@ -23,13 +29,15 @@ body {
 .navbar-fixed-top .nav {
     padding: 15px 0;
 }
-.main{
-padding-left: 30px;
 
+.main {
+    padding-left: 30px;
 }
-h3{
-  font-family: 'Droid Sans', sans-serif;
+
+h3 {
+    font-family: 'Droid Sans', sans-serif;
 }
+
 .navbar-fixed-top .navbar-brand {
     padding: 0 1px;
 }
@@ -37,13 +45,15 @@ h3{
 .navbar-fixed-top .navbar-brand {
     padding: 0 15px;
 }
-.title{
-  color: white;
-  padding-top: 120px;
-  padding-left: 25%;
-  font-size: 30px;
-  font-family: 'Merriweather Sans', sans-serif;
+
+.title {
+    color: white;
+    padding-top: 120px;
+    padding-left: 25%;
+    font-size: 30px;
+    font-family: 'Merriweather Sans', sans-serif;
 }
+
 @media(min-width:768px) {
     body {
         padding-top: 100px;
@@ -52,16 +62,15 @@ h3{
     .navbar-fixed-top .navbar-brand {
         padding: 1px 0;
     }
-    h1{
-      font-family: 'Open Sans', sans-serif;
+    h1 {
+        font-family: 'Open Sans', sans-serif;
     }
-
-    .title{
-      color: white;
-      padding-top: 120px;
-      padding-left: 25%;
-      font-size: 40px;
-      font-family: 'Merriweather Sans', sans-serif;
+    .title {
+        color: white;
+        padding-top: 120px;
+        padding-left: 25%;
+        font-size: 40px;
+        font-family: 'Merriweather Sans', sans-serif;
     }
 }
 
@@ -69,6 +78,7 @@ h3{
     background-color: #000;
     border-color: #000;
 }
+
 body {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 14px;
@@ -77,13 +87,15 @@ body {
     background-image: url(graphy.png);
 }
 
-.wall{
-  background-color: black;
-  color: white;
+.wall {
+    background-color: black;
+    color: white;
 }
-p.wall{
-  color: white;
+
+p.wall {
+    color: white;
 }
+
 .row {
     margin-right: -15px;
     margin-left: -15px;
